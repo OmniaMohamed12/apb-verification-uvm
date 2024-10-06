@@ -1,7 +1,8 @@
 # apb-verification-uvm
 This project focuses on the Verification of Advanced Peripheral Bus (APB) protocol using the Universal Verification Methodology (UVM).
 ## APB Block Diagram
-![APB block diagram](https://github.com/user-attachments/assets/2abd1a3f-ce54-4cb9-8b39-3a1e9b9817ce)
+
+![APB block diagram](https://github.com/user-attachments/assets/758c616e-ad9e-40eb-8e34-e84de77229c1)
 
 ## APB Interface Signals
 
@@ -20,12 +21,15 @@ This project focuses on the Verification of Advanced Peripheral Bus (APB) protoc
 
 
 ## UVM Testbench Architecture
-![New board - Page 1 (2)](https://github.com/user-attachments/assets/fc539f29-8eaf-496f-b97d-13bb8e050097)
+![New board - Page 1 (2)](https://github.com/user-attachments/assets/0d365400-323a-4dbe-a317-975286cfa32e)
+
 
 ## Coverage Results
 
 - **Functional Coverage**:
-![image](https://github.com/user-attachments/assets/70092332-fd7b-4eda-b5ea-ab44bb0e4fe2)
+![funcovapb](https://github.com/user-attachments/assets/55159333-1b66-468f-b3f7-351e649c346e)
+
 
 - **Code Coverage**  :
-![image](https://github.com/user-attachments/assets/08c2c73f-32ff-4a7c-bcf5-2988d1b56d04)
+- ![codecovapb](https://github.com/user-attachments/assets/64f8efb2-ee65-4186-904e-b32eb763d6da)
+

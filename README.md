@@ -26,6 +26,6 @@ This project focuses on the Verification of Advanced Peripheral Bus (APB) protoc
 ## Coverage Results
 - **Functional Coverage**:
 - ![funcovapb](https://github.com/user-attachments/assets/55159333-1b66-468f-b3f7-351e649c346e)
-- **Code Coverage**  :
-- ![codecovapb](https://github.com/user-attachments/assets/64f8efb2-ee65-4186-904e-b32eb763d6da)
+- **Code Coverage** :
+-  ![codecovapb](https://github.com/user-attachments/assets/64f8efb2-ee65-4186-904e-b32eb763d6da)
 

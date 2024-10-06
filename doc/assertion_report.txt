@@ -1,0 +1,61 @@
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /APB_Top/ifc
+=== Design Unit: work.APB_IF
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       3         3         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_Top/ifc/p1      APB_IF.sv(13)                      0          1
+/APB_Top/ifc/p2      APB_IF.sv(19)                      0          1
+/APB_Top/ifc/p3      APB_IF.sv(25)                      0          1
+
+=================================================================================
+=== Instance: /APB_Pack
+=== Design Unit: work.APB_Pack
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       5         5         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_Pack/APB_Reset_Seq/do_item/immed__64
+                     APB_SequenceS.svh(64)              0          1
+/APB_Pack/APB_Write_Seq/do_item/immed__96
+                     APB_SequenceS.svh(96)              0          1
+/APB_Pack/APB_Read_Seq/do_item/immed__156
+                     APB_SequenceS.svh(156)             0          1
+/APB_Pack/APB_Write_Read_Seq/do_item/immed__223
+                     APB_SequenceS.svh(223)             0          1
+/APB_Pack/APB_Write_Read_Seq/do_item/immed__216
+                     APB_SequenceS.svh(216)             0          1
+
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/APB_Top/ifc/p1      APB_IF.sv(13)                      0          1
+/APB_Top/ifc/p2      APB_IF.sv(19)                      0          1
+/APB_Top/ifc/p3      APB_IF.sv(25)                      0          1
+/APB_Pack/APB_Reset_Seq/do_item/immed__64
+                     APB_SequenceS.svh(64)              0          1
+/APB_Pack/APB_Write_Seq/do_item/immed__96
+                     APB_SequenceS.svh(96)              0          1
+/APB_Pack/APB_Read_Seq/do_item/immed__156
+                     APB_SequenceS.svh(156)             0          1
+/APB_Pack/APB_Write_Read_Seq/do_item/immed__223
+                     APB_SequenceS.svh(223)             0          1
+/APB_Pack/APB_Write_Read_Seq/do_item/immed__216
+                     APB_SequenceS.svh(216)             0          1
+
+Total Coverage By Instance (filtered view): 100.00%
+

@@ -1,0 +1,321 @@
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /APB_Pack/APB_Coverage/cg                        99.34%        100          -    Uncovered            
+    covered/total bins:                                   168        170          -                      
+    missing/total bins:                                     2        170          -                      
+    % Hit:                                             98.82%        100          -                      
+    type_option.weight=1
+    type_option.goal=100
+    type_option.comment=
+    type_option.strobe=0
+    type_option.merge_instances=auto(0)
+    Coverpoint PADDR                                   96.96%        100          -    Uncovered            
+        covered/total bins:                                32         33          -                      
+        missing/total bins:                                 1         33          -                      
+        % Hit:                                         96.96%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint PWRITE                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint PRESETn                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint PWDATA                                 100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint PREADY                                 100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint PRDATA                                  98.43%        100          -    Uncovered            
+        covered/total bins:                                63         64          -                      
+        missing/total bins:                                 1         64          -                      
+        % Hit:                                         98.43%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+    Coverpoint PSLVERR                                100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        type_option.weight=1
+        type_option.goal=100
+        type_option.comment=
+ Covergroup instance \/APB_Pack::APB_Coverage::cg      99.34%        100          -    Uncovered            
+    covered/total bins:                                   168        170          -                      
+    missing/total bins:                                     2        170          -                      
+    % Hit:                                             98.82%        100          -                      
+    option.name=\/APB_Pack::APB_Coverage::cg 
+    option.weight=1
+    option.goal=100
+    option.comment=
+    option.at_least=1
+    option.auto_bin_max=64
+    option.cross_num_print_missing=0
+    option.detect_overlap=0
+    option.per_instance=0
+    option.get_inst_coverage=0
+    Coverpoint PADDR                                   96.96%        100          -    Uncovered            
+        covered/total bins:                                32         33          -                      
+        missing/total bins:                                 1         33          -                      
+        % Hit:                                         96.96%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin b1[0]                                          71          1          -    Covered              
+        bin b1[1]                                          78          1          -    Covered              
+        bin b1[2]                                          87          1          -    Covered              
+        bin b1[3]                                          82          1          -    Covered              
+        bin b1[4]                                          96          1          -    Covered              
+        bin b1[5]                                          68          1          -    Covered              
+        bin b1[6]                                          85          1          -    Covered              
+        bin b1[7]                                          75          1          -    Covered              
+        bin b1[8]                                          74          1          -    Covered              
+        bin b1[9]                                          81          1          -    Covered              
+        bin b1[10]                                         87          1          -    Covered              
+        bin b1[11]                                         76          1          -    Covered              
+        bin b1[12]                                         72          1          -    Covered              
+        bin b1[13]                                         78          1          -    Covered              
+        bin b1[14]                                         76          1          -    Covered              
+        bin b1[15]                                         87          1          -    Covered              
+        bin b1[16]                                         77          1          -    Covered              
+        bin b1[17]                                         81          1          -    Covered              
+        bin b1[18]                                         96          1          -    Covered              
+        bin b1[19]                                         72          1          -    Covered              
+        bin b1[20]                                         77          1          -    Covered              
+        bin b1[21]                                         84          1          -    Covered              
+        bin b1[22]                                         74          1          -    Covered              
+        bin b1[23]                                         77          1          -    Covered              
+        bin b1[24]                                         79          1          -    Covered              
+        bin b1[25]                                         99          1          -    Covered              
+        bin b1[26]                                         70          1          -    Covered              
+        bin b1[27]                                         73          1          -    Covered              
+        bin b1[28]                                         95          1          -    Covered              
+        bin b1[29]                                         90          1          -    Covered              
+        bin b1[30]                                         72          1          -    Covered              
+        bin b1[31]                                         71          1          -    Covered              
+        bin b1[32]                                          0          1          -    ZERO                 
+    Coverpoint PWRITE                                 100.00%        100          -    Covered              
+        covered/total bins:                                 4          4          -                      
+        missing/total bins:                                 0          4          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin read                                         2048          1          -    Covered              
+        bin write                                        1536          1          -    Covered              
+        bin wtor                                          513          1          -    Covered              
+        bin wtor32                                          1          1          -    Covered              
+    Coverpoint PRESETn                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin low                                           512          1          -    Covered              
+        bin high                                         3072          1          -    Covered              
+        bin ltoh                                            1          1          -    Covered              
+    Coverpoint PWDATA                                 100.00%        100          -    Covered              
+        covered/total bins:                                64         64          -                      
+        missing/total bins:                                 0         64          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin auto[0:67108863]                              552          1          -    Covered              
+        bin auto[67108864:134217727]                       39          1          -    Covered              
+        bin auto[134217728:201326591]                      22          1          -    Covered              
+        bin auto[201326592:268435455]                      31          1          -    Covered              
+        bin auto[268435456:335544319]                      43          1          -    Covered              
+        bin auto[335544320:402653183]                      42          1          -    Covered              
+        bin auto[402653184:469762047]                      33          1          -    Covered              
+        bin auto[469762048:536870911]                      28          1          -    Covered              
+        bin auto[536870912:603979775]                      17          1          -    Covered              
+        bin auto[603979776:671088639]                      20          1          -    Covered              
+        bin auto[671088640:738197503]                      29          1          -    Covered              
+        bin auto[738197504:805306367]                      34          1          -    Covered              
+        bin auto[805306368:872415231]                      25          1          -    Covered              
+        bin auto[872415232:939524095]                      31          1          -    Covered              
+        bin auto[939524096:1006632959]                     39          1          -    Covered              
+        bin auto[1006632960:1073741823]                    33          1          -    Covered              
+        bin auto[1073741824:1140850687]                    50          1          -    Covered              
+        bin auto[1140850688:1207959551]                    36          1          -    Covered              
+        bin auto[1207959552:1275068415]                    25          1          -    Covered              
+        bin auto[1275068416:1342177279]                    35          1          -    Covered              
+        bin auto[1342177280:1409286143]                    32          1          -    Covered              
+        bin auto[1409286144:1476395007]                    35          1          -    Covered              
+        bin auto[1476395008:1543503871]                    29          1          -    Covered              
+        bin auto[1543503872:1610612735]                    36          1          -    Covered              
+        bin auto[1610612736:1677721599]                    18          1          -    Covered              
+        bin auto[1677721600:1744830463]                    46          1          -    Covered              
+        bin auto[1744830464:1811939327]                    41          1          -    Covered              
+        bin auto[1811939328:1879048191]                    25          1          -    Covered              
+        bin auto[1879048192:1946157055]                    31          1          -    Covered              
+        bin auto[1946157056:2013265919]                    40          1          -    Covered              
+        bin auto[2013265920:2080374783]                    20          1          -    Covered              
+        bin auto[2080374784:2147483647]                    27          1          -    Covered              
+        bin auto[2147483648:2214592511]                    34          1          -    Covered              
+        bin auto[2214592512:2281701375]                    20          1          -    Covered              
+        bin auto[2281701376:2348810239]                    33          1          -    Covered              
+        bin auto[2348810240:2415919103]                    37          1          -    Covered              
+        bin auto[2415919104:2483027967]                    25          1          -    Covered              
+        bin auto[2483027968:2550136831]                    32          1          -    Covered              
+        bin auto[2550136832:2617245695]                    36          1          -    Covered              
+        bin auto[2617245696:2684354559]                    30          1          -    Covered              
+        bin auto[2684354560:2751463423]                    46          1          -    Covered              
+        bin auto[2751463424:2818572287]                    32          1          -    Covered              
+        bin auto[2818572288:2885681151]                    28          1          -    Covered              
+        bin auto[2885681152:2952790015]                    27          1          -    Covered              
+        bin auto[2952790016:3019898879]                    41          1          -    Covered              
+        bin auto[3019898880:3087007743]                    33          1          -    Covered              
+        bin auto[3087007744:3154116607]                    36          1          -    Covered              
+        bin auto[3154116608:3221225471]                    38          1          -    Covered              
+        bin auto[3221225472:3288334335]                    19          1          -    Covered              
+        bin auto[3288334336:3355443199]                    39          1          -    Covered              
+        bin auto[3355443200:3422552063]                  1071          1          -    Covered              
+        bin auto[3422552064:3489660927]                    21          1          -    Covered              
+        bin auto[3489660928:3556769791]                    35          1          -    Covered              
+        bin auto[3556769792:3623878655]                    18          1          -    Covered              
+        bin auto[3623878656:3690987519]                    40          1          -    Covered              
+        bin auto[3690987520:3758096383]                    27          1          -    Covered              
+        bin auto[3758096384:3825205247]                    29          1          -    Covered              
+        bin auto[3825205248:3892314111]                    33          1          -    Covered              
+        bin auto[3892314112:3959422975]                    32          1          -    Covered              
+        bin auto[3959422976:4026531839]                    20          1          -    Covered              
+        bin auto[4026531840:4093640703]                    37          1          -    Covered              
+        bin auto[4093640704:4160749567]                    29          1          -    Covered              
+        bin auto[4160749568:4227858431]                    29          1          -    Covered              
+        bin auto[4227858432:4294967295]                    33          1          -    Covered              
+    Coverpoint PREADY                                 100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin high                                         3584          1          -    Covered              
+    Coverpoint PRDATA                                  98.43%        100          -    Uncovered            
+        covered/total bins:                                63         64          -                      
+        missing/total bins:                                 1         64          -                      
+        % Hit:                                         98.43%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        bin auto[0:67108863]                             1558          1          -    Covered              
+        bin auto[67108864:134217727]                        8          1          -    Covered              
+        bin auto[134217728:201326591]                       4          1          -    Covered              
+        bin auto[201326592:268435455]                      25          1          -    Covered              
+        bin auto[268435456:335544319]                      22          1          -    Covered              
+        bin auto[335544320:402653183]                      20          1          -    Covered              
+        bin auto[402653184:469762047]                      10          1          -    Covered              
+        bin auto[469762048:536870911]                      38          1          -    Covered              
+        bin auto[536870912:603979775]                       0          1          -    ZERO                 
+        bin auto[603979776:671088639]                      32          1          -    Covered              
+        bin auto[671088640:738197503]                     579          1          -    Covered              
+        bin auto[738197504:805306367]                       4          1          -    Covered              
+        bin auto[805306368:872415231]                       7          1          -    Covered              
+        bin auto[872415232:939524095]                      16          1          -    Covered              
+        bin auto[939524096:1006632959]                      8          1          -    Covered              
+        bin auto[1006632960:1073741823]                    45          1          -    Covered              
+        bin auto[1073741824:1140850687]                    53          1          -    Covered              
+        bin auto[1140850688:1207959551]                    21          1          -    Covered              
+        bin auto[1207959552:1275068415]                    26          1          -    Covered              
+        bin auto[1275068416:1342177279]                    20          1          -    Covered              
+        bin auto[1342177280:1409286143]                    22          1          -    Covered              
+        bin auto[1409286144:1476395007]                    30          1          -    Covered              
+        bin auto[1476395008:1543503871]                    12          1          -    Covered              
+        bin auto[1543503872:1610612735]                    31          1          -    Covered              
+        bin auto[1610612736:1677721599]                    22          1          -    Covered              
+        bin auto[1677721600:1744830463]                    40          1          -    Covered              
+        bin auto[1744830464:1811939327]                    49          1          -    Covered              
+        bin auto[1811939328:1879048191]                     8          1          -    Covered              
+        bin auto[1879048192:1946157055]                    23          1          -    Covered              
+        bin auto[1946157056:2013265919]                    30          1          -    Covered              
+        bin auto[2013265920:2080374783]                    40          1          -    Covered              
+        bin auto[2080374784:2147483647]                    34          1          -    Covered              
+        bin auto[2147483648:2214592511]                    18          1          -    Covered              
+        bin auto[2214592512:2281701375]                     6          1          -    Covered              
+        bin auto[2281701376:2348810239]                    25          1          -    Covered              
+        bin auto[2348810240:2415919103]                    24          1          -    Covered              
+        bin auto[2415919104:2483027967]                     8          1          -    Covered              
+        bin auto[2483027968:2550136831]                    22          1          -    Covered              
+        bin auto[2550136832:2617245695]                    30          1          -    Covered              
+        bin auto[2617245696:2684354559]                    19          1          -    Covered              
+        bin auto[2684354560:2751463423]                    28          1          -    Covered              
+        bin auto[2751463424:2818572287]                    18          1          -    Covered              
+        bin auto[2818572288:2885681151]                    16          1          -    Covered              
+        bin auto[2885681152:2952790015]                     2          1          -    Covered              
+        bin auto[2952790016:3019898879]                    12          1          -    Covered              
+        bin auto[3019898880:3087007743]                    28          1          -    Covered              
+        bin auto[3087007744:3154116607]                    34          1          -    Covered              
+        bin auto[3154116608:3221225471]                    45          1          -    Covered              
+        bin auto[3221225472:3288334335]                    70          1          -    Covered              
+        bin auto[3288334336:3355443199]                    14          1          -    Covered              
+        bin auto[3355443200:3422552063]                    40          1          -    Covered              
+        bin auto[3422552064:3489660927]                     2          1          -    Covered              
+        bin auto[3489660928:3556769791]                    34          1          -    Covered              
+        bin auto[3556769792:3623878655]                     4          1          -    Covered              
+        bin auto[3623878656:3690987519]                    24          1          -    Covered              
+        bin auto[3690987520:3758096383]                    18          1          -    Covered              
+        bin auto[3758096384:3825205247]                    28          1          -    Covered              
+        bin auto[3825205248:3892314111]                     8          1          -    Covered              
+        bin auto[3892314112:3959422975]                    34          1          -    Covered              
+        bin auto[3959422976:4026531839]                    21          1          -    Covered              
+        bin auto[4026531840:4093640703]                    36          1          -    Covered              
+        bin auto[4093640704:4160749567]                    36          1          -    Covered              
+        bin auto[4160749568:4227858431]                     8          1          -    Covered              
+        bin auto[4227858432:4294967295]                    35          1          -    Covered              
+    Coverpoint PSLVERR                                100.00%        100          -    Covered              
+        covered/total bins:                                 1          1          -                      
+        missing/total bins:                                 0          1          -                      
+        % Hit:                                        100.00%        100          -                      
+        option.weight=1
+        option.goal=100
+        option.comment=
+        option.at_least=1
+        option.auto_bin_max=64
+        option.detect_overlap=0
+        illegal_bin high                                 1024                     -    Occurred             
+        bin low                                          2560          1          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 99.34%  COVERGROUP TYPES: 1
+

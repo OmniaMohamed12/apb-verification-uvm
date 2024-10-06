@@ -1,0 +1,259 @@
+Coverage Report by DU with details
+
+=================================================================================
+=== Design Unit: work.apb_slave
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        10        10         0   100.00%
+
+================================Branch Details================================
+
+Branch Coverage for Design Unit work.apb_slave
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_slave.sv
+------------------------------------IF Branch------------------------------------
+    19                                     10240     Count coming in to IF
+    19              1                        512             if(!PRESETn) begin
+
+    30              1                       9728             else begin 
+
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    31                                      9728     Count coming in to IF
+    31              1                       3072                 if(PSELx && PENABLE )begin
+
+    55              1                       6656             else begin
+
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    33                                      3072     Count coming in to IF
+    33              1                       1536                     if(PWRITE) begin //write operation
+
+    42              1                       1536                     else begin
+
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    34                                      1536     Count coming in to IF
+    34              1                        512                         if(PADDR >=32'h0000_0020 )begin //the address is out of range
+
+    37              1                       1024                         else begin
+
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    43                                      1536     Count coming in to IF
+    43              1                        512                         if(PADDR >= 32'h0000_0020)begin //the address is out of range
+
+    46              1                       1024                         else begin
+
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+Condition Coverage:
+    Enabled Coverage              Bins   Covered    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Conditions                       4         4         0   100.00%
+
+================================Condition Details================================
+
+Condition Coverage for Design Unit work.apb_slave --
+
+  File apb_slave.sv
+----------------Focused Condition View-------------------
+Line       31 Item    1  (PSELx && PENABLE)
+Condition totals: 2 of 2 input terms covered = 100.00%
+
+  Input Term   Covered  Reason for no coverage   Hint
+ -----------  --------  -----------------------  --------------
+       PSELx         Y
+     PENABLE         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  PSELx_0               -                             
+  Row   2:          1  PSELx_1               PENABLE                       
+  Row   3:          1  PENABLE_0             PSELx                         
+  Row   4:          1  PENABLE_1             PSELx                         
+
+----------------Focused Condition View-------------------
+Line       34 Item    1  (PADDR >= 32)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  (PADDR >= 32)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (PADDR >= 32)_0       -                             
+  Row   2:          1  (PADDR >= 32)_1       -                             
+
+----------------Focused Condition View-------------------
+Line       43 Item    1  (PADDR >= 32)
+Condition totals: 1 of 1 input term covered = 100.00%
+
+     Input Term   Covered  Reason for no coverage   Hint
+    -----------  --------  -----------------------  --------------
+  (PADDR >= 32)         Y
+
+     Rows:       Hits  FEC Target            Non-masking condition(s)      
+ ---------  ---------  --------------------  -------------------------     
+  Row   1:          1  (PADDR >= 32)_0       -                             
+  Row   2:          1  (PADDR >= 32)_1       -                             
+
+
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      18        18         0   100.00%
+
+================================Statement Details================================
+
+Statement Coverage for Design Unit work.apb_slave --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File apb_slave.sv
+    2                                                module apb_slave#(parameter DATA_WIDTH=32,parameter ADDR_WIDTH=32)
+
+    3                                                (
+
+    4                                                    input logic PCLK,
+
+    5                                                    input logic PRESETn,
+
+    6                                                    input logic [ADDR_WIDTH-1:0] PADDR,
+
+    7                                                    input logic PSELx,
+
+    8                                                    input logic PENABLE,
+
+    9                                                    input logic PWRITE,
+
+    10                                                   input logic [DATA_WIDTH-1:0] PWDATA,
+
+    11                                                   output logic PREADY,
+
+    12                                                   output logic [DATA_WIDTH-1:0] PRDATA,
+
+    13                                                   output logic PSLVERR);
+
+    14                                                   
+
+    15                                                   logic [1:0] current_State,next_state;
+
+    16                                                   logic [DATA_WIDTH-1:0] mem [32];
+
+    17                                                  
+
+    18              1                      10241         always @(posedge PCLK) begin
+
+    19                                                       if(!PRESETn) begin
+
+    20                                                           //PREADY <= 1'b1;
+
+    21              1                        512                 PRDATA <= 32'h0000_0000;
+
+    22              1                        512                 PSLVERR <= 1'b0;
+
+    23              1                      16896                 foreach (mem[i]) begin
+
+    24              1                      16384                     mem[i] <= 32'h0000_0000;
+
+    25                                                           end
+
+    26              1                        512                 PREADY <=1'b1;
+
+    27              1                        512                 @(posedge PCLK);
+
+    28              1                        512                 PREADY <=1'b0;
+
+    29                                                       end
+
+    30                                                       else begin 
+
+    31                                                           if(PSELx && PENABLE )begin
+
+    32                                                               //PREADY <=1'b1;
+
+    33                                                               if(PWRITE) begin //write operation
+
+    34                                                                   if(PADDR >=32'h0000_0020 )begin //the address is out of range
+
+    35              1                        512                                 PSLVERR <=1'b1;
+
+    36                                                                   end
+
+    37                                                                   else begin
+
+    38              1                       1024                             mem[PADDR] <=PWDATA;
+
+    39              1                       1024                             PSLVERR <=1'b0;
+
+    40                                                                   end
+
+    41                                                               end
+
+    42                                                               else begin
+
+    43                                                                   if(PADDR >= 32'h0000_0020)begin //the address is out of range
+
+    44              1                        512                             PSLVERR <=1'b1;
+
+    45                                                                   end
+
+    46                                                                   else begin
+
+    47              1                       1024                             PRDATA <=mem[PADDR];
+
+    48              1                       1024                             PSLVERR <=1'b0;
+
+    49                                                                   end
+
+    50                                                               end
+
+    51              1                       3072                     PREADY <=1'b1;
+
+    52              1                       3072                     @(posedge PCLK);
+
+    53              1                       3072                     PREADY <=1'b0;
+
+    54                                                       end
+
+    55                                                       else begin
+
+    56              1                       6656                 PREADY <=1'b0;
+
+
+Toggle Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Toggles                         68        68         0   100.00%
+
+================================Toggle Details================================
+
+Toggle Coverage for Design Unit work.apb_slave
+
+                                              Node      1H->0L      0L->1H  "Coverage"
+                                              ---------------------------------------
+                                      PRDATA[0-31]           1           1      100.00 
+                                            PREADY           1           1      100.00 
+                                           PSLVERR           1           1      100.00 
+
+Total Node Count     =         34 
+Toggled Node Count   =         34 
+Untoggled Node Count =          0 
+
+Toggle Coverage      =     100.00% (68 of 68 bins)
+
+
+Total Coverage By Design Unit (filtered view): 100.00%
+
+

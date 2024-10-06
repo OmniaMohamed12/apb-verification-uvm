@@ -23,13 +23,9 @@ This project focuses on the Verification of Advanced Peripheral Bus (APB) protoc
 ## UVM Testbench Architecture
 ![New board - Page 1 (2)](https://github.com/user-attachments/assets/0d365400-323a-4dbe-a317-975286cfa32e)
 
-
 ## Coverage Results
-
 - **Functional Coverage**:
-![funcovapb](https://github.com/user-attachments/assets/55159333-1b66-468f-b3f7-351e649c346e)
-
-
+- ![funcovapb](https://github.com/user-attachments/assets/55159333-1b66-468f-b3f7-351e649c346e)
 - **Code Coverage**  :
 - ![codecovapb](https://github.com/user-attachments/assets/64f8efb2-ee65-4186-904e-b32eb763d6da)
 
